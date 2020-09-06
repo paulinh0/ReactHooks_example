@@ -1,3 +1,5 @@
+/*Imports*/
+
 import React, { useState, useEffect } from 'react';
 import Countries from './components/countries/Countries';
 import Header from './components/header/Header';
@@ -7,7 +9,7 @@ export default function App() {
   const [filteredCountries, setFilteredCountries] = useState([]);
   const [filteredPopulation, setFilteredPopulation] = useState(0);
   const [userFilter, setUserFilter] = useState('');
-
+  /*Conexão da Api*/
   useEffect(() => {
     const getCountries = async () => {
       const res = await fetch('https://restcountries.eu/rest/v2/all');
