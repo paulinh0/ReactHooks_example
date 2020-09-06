@@ -5,6 +5,7 @@ import Countries from './components/countries/Countries';
 import Header from './components/header/Header';
 
 export default function App() {
+  require('dotenv').config()
   const [allCountries, setAllCountries] = useState([]);
   const [filteredCountries, setFilteredCountries] = useState([]);
   const [filteredPopulation, setFilteredPopulation] = useState(0);
