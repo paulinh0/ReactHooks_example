@@ -52,6 +52,8 @@ export default function App() {
 
     setFilteredCountries(filteredCountries);
     setFilteredPopulation(filteredPopulation);
+
+    console.log(filteredCountries);
   };
 
   return (
